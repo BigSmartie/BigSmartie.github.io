@@ -3,7 +3,7 @@
 // put your custom CSS here!
 /* 定义一个叫 "chinese-indent" 的开关 */
 .chinese-indent article p {
-  text-indent: 2em;
+  text-indent: 2em !important;
   text-align: justify; /* 顺便加个两端对齐，排版更整齐 */
 }
 
