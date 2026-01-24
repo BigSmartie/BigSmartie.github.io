@@ -1,9 +1,16 @@
 @use "./base.scss";
 
 // put your custom CSS here!
-// 针对文章正文(article)里的段落(p)开启缩进
-article p {
-  text-indent: 2em; /* 2em 表示缩进两个字符的宽度 */
+/* 定义一个叫 "chinese-indent" 的开关 */
+.chinese-indent article p {
+  text-indent: 2em;
+  text-align: justify; /* 顺便加个两端对齐，排版更整齐 */
+}
+
+/* 排除列表和引用块，防止乱掉 */
+.chinese-indent article li p,
+.chinese-indent article blockquote p {
+  text-indent: 0;
 }
 
 // 排除列表、引用块里的段落，防止排版乱掉
