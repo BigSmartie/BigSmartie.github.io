@@ -1,5 +1,5 @@
 ---
-title: Welcome to Quartz
+title: My Home
 ---
 
 这里是我的个人主页，用于记录学习笔记和生活点滴。
