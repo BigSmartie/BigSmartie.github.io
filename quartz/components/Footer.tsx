@@ -28,12 +28,11 @@ export default ((opts?: Options) => {
 
         {/* --- 2. 这里是我们新加的评论区代码！ --- */}
         <div style="margin-top: 2rem;">
-          <script
-            src="https://giscus.app/client.js"
-            data-repo="BigSmartie/BigSmartie.github.io"   // 【改】仓库名
-            data-repo-id="R_kgD..."                         // 【改】填你的 repo-id
-            data-category="Announcements"                   // 【改】分类名
-            data-category-id="DIC_kwD..."                   // 【改】填你的 category-id
+          <script src="https://giscus.app/client.js"
+            data-repo="BigSmartie/BigSmartie.github.io"
+            data-repo-id="R_kgDOQ_hbQw"
+            data-category="General"
+            data-category-id="DIC_kwDOQ_hbQ84C1XAb"
             data-mapping="pathname"
             data-strict="0"
             data-reactions-enabled="1"
@@ -41,10 +40,9 @@ export default ((opts?: Options) => {
             data-input-position="top"
             data-theme="preferred_color_scheme"
             data-lang="zh-CN"
-            data-loading="lazy"
             crossorigin="anonymous"
-            async
-          ></script>
+            async>
+          </script>
         </div>
         {/* --- 结束 --- */}
       </footer>
