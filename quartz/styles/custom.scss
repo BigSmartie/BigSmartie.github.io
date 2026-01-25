@@ -1,20 +1,14 @@
 @use "./base.scss";
 
 // put your custom CSS here!
-/* 定义一个叫 "chinese-indent" 的开关 */
-.chinese-indent article p {
-  text-indent: 2em !important;
-  text-align: justify; /* 顺便加个两端对齐，排版更整齐 */
+/* 修正后的选择器：针对带有 chinese-indent 类的 article 标签 */
+article.chinese-indent p {
+  text-indent: 2em !important; /* 强制缩进两个字 */
+  text-align: justify;         /* 两端对齐 */
 }
 
-/* 排除列表和引用块，防止乱掉 */
-.chinese-indent article li p,
-.chinese-indent article blockquote p {
-  text-indent: 0;
-}
-
-// 排除列表、引用块里的段落，防止排版乱掉
-article li p, 
-article blockquote p {
-  text-indent: 0;
+/* 依然排除列表和引用块 */
+article.chinese-indent li p,
+article.chinese-indent blockquote p {
+  text-indent: 0 !important;
 }
