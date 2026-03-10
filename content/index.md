@@ -1,5 +1,5 @@
 ---
-title: This is from BigSmartie！
+title: Hello Everyone !
 ---
 
 这里是我的个人主页，用于记录学习笔记和生活点滴，也可能会包括一些平时的心情随笔~~
